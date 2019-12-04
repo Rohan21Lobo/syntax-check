@@ -2,9 +2,9 @@
 import yaml
 import sys
 
-with open(sys.argv[0]) as f:
+with open(sys.argv[1]) as f:
     try:
-        yaml.safe_load(f)
+        yaml.safe_load(f.read())
         print("Okay")
     except:
         print("invalid")
